@@ -23,14 +23,19 @@ trough homebrew(Mac):<br/>
 >> Choose **JAR** as the file packaging type.
 >> **Dependency**: Software that your application depends on.
 
-## breaking down project
+# breaking down project
 * src/main/java: source code
 * src/main/resources: recources
 * src/test/java: appication tests
 
-## running spring boot app
+# running spring boot app
 
 command to compile the code(Mac): <br/>
 `` ./mvnw spring-boot:run `` <br/> or:
 `` ./mvnw clean spring-boot:run `` => Removes previously compiled code and runs it.
 
+
+# dependencies
+
+a **dependency** is a packaged library of files(i.e **JAR**).
+> when you need a dependency Maven looks for it in the Local Repository. If it doesnt find them, Maven will download all the dependencies that it needs from the cental repository and store them in your local repository.
